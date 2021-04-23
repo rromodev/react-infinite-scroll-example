@@ -14,7 +14,7 @@ function App() {
       <Div100vh>
 
         <Box textAlign="center" fontSize="xl">
-          <Grid p={3} templateRows="100px 1fr 100px">
+          <Grid minH="100%" p={3} templateRows="100px 1fr 100px">
             <Box>
               <ColorModeSwitcher justifySelf="flex-end" />
             </Box>
