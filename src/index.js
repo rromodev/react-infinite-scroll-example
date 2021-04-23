@@ -5,13 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 
-const appHeight = () => {
-  const doc = document.body
-  doc.style.height = `${window.innerHeight}px`
-}
-window.addEventListener('resize', appHeight)
-appHeight()
-
 ReactDOM.render(
   <StrictMode>
     <ColorModeScript />
