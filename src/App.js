@@ -7,23 +7,19 @@ import {
   theme,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher'
+import DataContainer from './components/DataContainer'
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
       <Div100vh>
-
-        <Box textAlign="center" fontSize="xl">
-          <Grid minH="100vh" p={3} templateRows="100px 1fr 100px">
-            <Box>
-              <ColorModeSwitcher justifySelf="flex-end" />
-            </Box>
-            <Box backgroundColor="teal"></Box>
-            <Box backgroundColor="twitter.200"></Box>
-            
-            
-          </Grid>
-        </Box>
+        <Grid h="100%" p={3} templateRows="100px auto 100px">
+          <Box>
+            <ColorModeSwitcher justifySelf="flex-end" />
+          </Box>
+          <DataContainer backgroundColor="teal"></DataContainer>
+          <Box backgroundColor="twitter.200"></Box>
+        </Grid>
       </Div100vh>
     </ChakraProvider>
   );
