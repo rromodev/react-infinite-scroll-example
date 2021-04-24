@@ -21,7 +21,7 @@ const useFetchData = (page) => {
 }
 
 const DataItem = ({data}) => {
-  
+
   return (
     <>
       <Tr>
@@ -37,7 +37,7 @@ const DataTable = ({info}) => {
 
   return (
     <>
-      <Table >
+      <Table>
         <Tbody>
           {info?.map(item => (
             <DataItem key={`${item.email}`} data={item}/>
