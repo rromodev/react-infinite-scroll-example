@@ -21,7 +21,6 @@ const useFetchData = (page) => {
 }
 
 const DataItem = ({data}) => {
-
   return (
     <>
       <Tr>
@@ -34,7 +33,6 @@ const DataItem = ({data}) => {
 }
 
 const DataTable = ({info}) => {
-
   return (
     <>
       <Table>
