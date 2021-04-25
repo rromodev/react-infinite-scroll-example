@@ -2,7 +2,6 @@ import { Table, Tbody, Td, Tr } from '@chakra-ui/table'
 import React, { useEffect, useState } from 'react'
 
 const useFetchData = (page) => {  
-  
   const [users, setUsers] = useState([])
 
   useEffect(() => {   
