@@ -1,5 +1,6 @@
-import { Table, Tbody, Td, Tr } from '@chakra-ui/table'
+import { Table, Tbody } from '@chakra-ui/table'
 import React, { useEffect, useState } from 'react'
+import DataItem from './DataItem'
 
 const useFetchData = (page) => {  
   const [users, setUsers] = useState([])
@@ -17,18 +18,6 @@ const useFetchData = (page) => {
   }, [page])
 
   return users
-}
-
-const DataItem = ({data}) => {
-  return (
-    <>
-      <Tr>
-        <Td>{`${data.name.title} ${data.name.first} ${data.name.last}`}</Td>
-        <Td>{`${data.location.city}, ${data.location.country} `}</Td>
-        <Td>{data.email}</Td>
-      </Tr>
-    </>
-  )
 }
 
 const DataTable = ({info}) => {
